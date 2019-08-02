@@ -1,0 +1,45 @@
+<body></body>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div><button onmouseout="normal(this)" onmouseover="bigger(this)" onclick="textPrompt()"> Click Here! </button>
+<p id="start"></p>
+
+<script>
+  function textPrompt() {
+    var username = prompt("Please enter your name");
+    if (username != null) {
+        document.getElementById("start").innerHTML =
+            "Hi " + username + "! Click the button below to continue to my website"
+    }
+  }
+
+  function bigger(element) {
+    element.style.width = "53%";
+  }
+  function normal(element) {
+    element.style.width = "50%";
+  }
+</script>
+
+<button onmouseout="normal(this)" onmouseover="bigger(this)" onclick="location.href='website stuff/homepage.html';"> Go to my website! </button>
+</div>
+
+<style>
+  button {
+    width:50%;
+    font-size:30px;
+    text-align:center;
+  }
+
+  div {
+    text-align:center;
+  }
+
+  body {
+    background-image: url(file:///Users/gwc/Downloads/829174-download-free-beautiful-landscape-backgrounds-1920x1200.jpg);
+    height: 768px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>

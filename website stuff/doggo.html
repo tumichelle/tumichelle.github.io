@@ -1,0 +1,65 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+<h1>Doggo</h1>
+
+<h3>
+<p>This is Ginger. She is my 10 year old pomeranian.
+<br>She is the best doggo in the whole world.</p>
+</h3>
+
+<img alt="Ginger dog picture" onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/0-3.jpeg" width="65%"></img>
+<p><img alt="Ginger dog picture" onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/0-4.jpeg"width="65%"></img></p>
+<video controls><source src="file:///Users/gwc/Downloads/video-1544676513.mp4" type=video/mp4 width="640" height="480"></video>
+
+<div class="fixed">
+<p><a href="file:///Users/gwc/Desktop/HTML%20Projects/website%20stuff/homepage.html"><b onmouseover="makeBlue(this)" onmouseout="makeBlack(this)">Back to Home</b></a></p>
+</div>
+
+<script>
+  function makeBlue(element) {
+    element.style = "color:blue;";
+  }
+  function makeBlack(element) {
+    element.style = "color:black;";
+  }
+  function getShadow(element) {
+    element.style.boxShadow = "10px 10px 4px #808080"
+  }
+  function getNormal(element) {
+    element.style.boxShadow = "None"
+  }
+</script>
+
+<style>
+  body {
+    font-family:'Cabin';
+    text-align:Center;
+    background-color:rgb(131, 198, 221);
+  }
+
+  div.fixed {
+    position: fixed;
+    bottom: 3;
+    right: 25;
+  }
+
+  h1 {
+    font-size:70px;
+    text-decoration:underline;
+    font-family:'Lobster';
+  }
+
+  b {
+    font-size:30px;
+  }
+
+  h3 {
+    font-size:40px;
+  }
+
+  .picture {
+    box-shadow: 5px 5px 2px;
+  }
+
+</style>

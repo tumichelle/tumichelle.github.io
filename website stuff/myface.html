@@ -1,0 +1,54 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+<h1>Face</h1>
+<h3>Yes, this is my spectacularly plain face.</h3>
+<p><img onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/0-2.jpeg" width="25%"></img></p>
+
+<div class="fixed">
+<p><a href="file:///Users/gwc/Desktop/HTML%20Projects/website%20stuff/homepage.html"><b onmouseover="makeBlue(this)" onmouseout="makeBlack(this)">Back to Home</b></a></p>
+</div>
+
+<script>
+  function makeBlue(element) {
+    element.style = "color:blue;";
+  }
+  function makeBlack(element) {
+    element.style = "color:black;";
+  }
+  function getShadow(element) {
+    element.style.boxShadow = "10px 10px 4px #808080"
+  }
+  function getNormal(element) {
+    element.style.boxShadow = "None"
+  }
+</script>
+
+<style>
+  body {
+    font-family:'Cabin';
+    text-align:Center;
+    background-color: rgb(224, 254, 254);
+  }
+
+  div.fixed {
+    position: fixed;
+    bottom: 3;
+    right: 25;
+  }
+
+  h1 {
+    font-size:70px;
+    text-decoration:underline;
+    font-family:'Lobster';
+  }
+
+  h3 {
+    font-size:40px;
+  }
+
+  b {
+    font-size:30px
+  }
+
+</style>

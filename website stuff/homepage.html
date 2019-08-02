@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+<style>
+
+  body {
+    font-family:'Cabin';
+    text-align:Center;
+    color:rgb(0,0,0);
+    font-size:200%;
+    background: url(file:///Users/gwc/Downloads/landscape2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  b {
+    color:rgb(255,255,255);
+    position: relative;
+    top: 80px;
+    font-size:150%;
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  h1 {
+    color:purple;
+    font-size:45px;
+    font-family:'Lobster';
+  }
+
+  h2 {
+    font-size:150%;
+  }
+
+  div.fixed {
+    position: fixed;
+    bottom: 3;
+    right: 25;
+
+  }
+
+</style>
+
+
+<h1>
+  <strong style="font-size:400%;" onmouseover="getShadow(this)" onmouseout="getNormal(this)">Michelle Tu</strong>
+</h1>
+
+
+<h2>A website all about narcissistic me!</h2>
+
+<body>
+  <a href="myface.html"><b onmouseover="makeRed(this)" onmouseout="makeWhite(this)">My face</b></a>
+  <a href="interests.html"><b onmouseover="makeRed(this)" onmouseout="makeWhite(this)">Interests</b></a>
+  <a href="doggo.html"><b onmouseover="makeRed(this)" onmouseout="makeWhite(this)">Doggo</b></a>
+  <a href="gwc.html"><b onmouseover="makeRed(this)" onmouseout="makeWhite(this)">GWC</b></a>
+  <a href="faq.html"><b onmouseover="makeRed(this)" onmouseout="makeWhite(this)">FAQ</b></a>
+</body>
+
+
+<p><a href="file:///Users/gwc/Desktop/HTML%20Projects/index.html"><b onmouseover="makeBlue(this)" onmouseout="makeWhite(this)"><div class="fixed">Back to Start Page</div></b></a></p>
+
+
+<script>
+  function makeRed(element) {
+    element.style = "color:red;";
+  }
+  function makeWhite(element) {
+    element.style = "color:white;";
+  }
+  function makeBlue(element) {
+    element.style = "color:blue;";
+  }
+  function getShadow(element) {
+    element.style.textShadow = "5px 5px 5px #000"
+  }
+  function getNormal(element) {
+    element.style.textShadow = "None"
+  }
+</script>
+
+</html>

@@ -1,0 +1,69 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+<h1>Interests</h1>
+
+  <p><h3> Dance - Ballet, Jazz, Tap, Modern, Contemporary </h3> </p>
+  <img onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/0.jpeg" width="35%"></img>
+  <p><img onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/20180712_111529(0).jpg" width="60%"></img></p>
+
+  <br><p><h3>Viola</h3></p>
+  <img onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/FolderImg.JPG" width="40%"></img>
+
+  <br><p><h3>Superheroes/Comics</h3></p>
+  <img onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/0-1.jpeg" width="25%"></img>
+
+  <br><p><h3>Kpop</h3></p>
+  <img onmouseover="getShadow(this)" onmouseout="getNormal(this)" src="file:///Users/gwc/Desktop/DSC_0251.NEF.jpeg" width="70%"></img>
+
+<script>
+  function makeBlue(element) {
+    element.style = "color:blue;";
+  }
+  function makeBlack(element) {
+    element.style = "color:black;";
+  }
+  function getShadow(element) {
+    element.style.boxShadow = "10px 10px 4px #808080"
+  }
+  function getNormal(element) {
+    element.style.boxShadow = "None"
+  }
+</script>
+
+<div class="fixed">
+  <p><a href="file:///Users/gwc/Desktop/HTML%20Projects/website%20stuff/homepage.html"><b onmouseover="makeBlue(this)" onmouseout="makeBlack(this)">Back to Home</b></a></p>
+</div>
+
+<style>
+
+  h1 {
+    font-size:70px;
+    text-decoration:underline;
+    font-family:'Lobster';
+  }
+
+  body {
+    font-family:'Cabin';
+    text-align:Center;
+    background-color:rgb(199, 206, 234);
+  }
+
+  div.fixed {
+    position: fixed;
+    bottom: 3;
+    right: 25;
+  }
+
+  h3 {
+    font-size:40px;
+  }
+
+  b {
+    font-size:30px;
+  }
+
+</style>
+
+</html>
